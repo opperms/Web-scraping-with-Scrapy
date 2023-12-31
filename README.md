@@ -5,8 +5,8 @@ In most cases use the commands below to get started:
 
 - Clone this project: ``git clone https://github.com/python-scrapy-playbook/quotes-js-project.git``
 - Create a Python Virtual Environment (not in the same directory as where the modules are, but one level above (see structure below): ``python -m venv venv``
-- Activate the Python Virtual Environment: ``./venv/scripts/activate``
-- Check that the latest release of pip is availible: ``python.exe -m pip install --upgrade pip``
+- Activate the Python Virtual Environment: ``./venv/scripts/activate`` on Windows, or ``source venv/bin/activate`` on MacOS
+- Check that the latest release of pip is availible: ``python.exe -m pip install --upgrade pip`` 
 - Install Scrapy using pip: ``pip install scrapy``
 - Install Scrapy-Playwright: ``pip install scrapy-playwright``
 - Check that Playwright in installed: ``playwright install``
