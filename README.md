@@ -12,3 +12,14 @@ In most cases use the commands below to get started:
 - Check that Playwright in installed: ``playwright install``
 - Listing the scrapy projects scrapy list
 - Running the scrapy project: ``scrapy crawl quotes``
+
+
+Add the following to the ``settings.py`` file:
+
+````python
+# settings.py
+DOWNLOAD_HANDLERS = {
+    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+}
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"``
